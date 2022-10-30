@@ -1,0 +1,22 @@
+class Parent:
+    def func1(self):
+        print("This function is in parent class.")
+
+class Child(Parent):
+    def func2(self):
+        print ("This function is in child class.")
+
+class Child2(Child):
+    def func3(self):
+        print("This function is in child 2.")
+
+class Child3(Child2):
+    pass
+
+class Child4(Child3):
+    pass
+
+object = Child4() 
+object.func3()
+object.func2()
+object.func1()

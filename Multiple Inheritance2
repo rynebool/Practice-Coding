@@ -1,0 +1,34 @@
+class Mother:
+    mothername = " "
+
+    def mother(self):
+        print(self.mothername)
+
+class Father:
+    fathername = " "
+
+    def father(self):
+        print(self.fathername)
+
+class Sonname:
+    sonname = "MICHAEL"
+
+    def son(self):
+        print(self.sonname)
+
+class Mine:
+    def myname(self):
+        print("RYNELYN BOOL")
+
+class Son(Mother, Father,Sonname):
+    def parent(self):
+        print("Father :", self.fathername)
+        print("Mother :", self.mothername)
+        print("Son: ", self.sonname)
+
+s1 = Mine()
+s1.myname()
+s2 = Son()
+s2.fathername = "RANILLO"
+s2.mothername = "EDELIZA"
+s2.parent()
